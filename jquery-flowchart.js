@@ -13,7 +13,6 @@
         parent.removeClass(animateIn).addClass(animateOut);
         var nextId = "#C" + $(this).attr("id").substring(1);
         history.push(nextId);
-        console.log(history);
         
         setTimeout(function() {
         	parent.hide();
