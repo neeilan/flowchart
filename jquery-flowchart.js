@@ -1,13 +1,15 @@
 (function($){
 	$.fn.fc = function (animateIn,animateOut, delay){
+     
         var history = ["#fc-main"];
+        
         if(!delay || delay<0){
          delay=500;
      }
+
      $(".fc-btn").click(function() {
       var parent = $(this).parent();
         $(".fc-btn").attr("disabled", "true"); //prevent multiple clicks
-
         parent.removeClass(animateIn).addClass(animateOut);
         var nextId = "#C" + $(this).attr("id").substring(1);
         history.push(nextId);
@@ -34,7 +36,6 @@
 
         }, delay);
     })
-
 
      $("#fc-back").click(function() {
         history.pop();

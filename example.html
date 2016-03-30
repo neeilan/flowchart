@@ -15,14 +15,10 @@
 	#fc-main{
 		display: block;
 	}
-	#fc-home, #fc-back{
-		display: none;
-		position: fixed;
-		top: 10px;
-		left: 10px;
-	}
-	#fc-back{
-		top: 50px;
+	nav{
+		text-align: center;
+		margin: auto;
+		padding: 10px;
 	}
 
 	button{
@@ -50,15 +46,14 @@
 		Card 4
 	</div>
 
-<nav>
-	<button id = "fc-home">Go Home</button><br>
-	<button id = "fc-back">Go Back</button>
-</nav>
+	<nav>
+		<button id = "fc-home">Go Home</button>
+		<button id = "fc-back">Go Back</button>
+	</nav>
 
 	<script>
 	$(document).ready( function() {
 		$("body").fc("bounceIn","fadeOut",1000);
 	});
 	</script>
-
 </body>
