@@ -15,21 +15,35 @@
 	#Cmain{
 		display: block;
 	}
+	#fc-home{
+		display: none;
+		position: fixed;
+		top: 10px;
+		left: 10px;
+	}
+
+	button{
+		padding: 10px;
+	}
 	</style>
+
 </head>
 
 <body>
-	<div class= "card animated" id = "Cmain">
+	
+	<div class= "fc-card animated" id = "Cmain">
 		You see Card 1 now
 		<button class= "fc-btn" id="Bcard2">Show card 2</button>
 	</div>
-	<div id = "Ccard2" class= "animated">
+	<div class= "fc-card animated" id = "Ccard2">
 		...and Card 2 now
 		<button class= "fc-btn" id="Bcard3">Show card 3</button>
 	</div>
-	<div class= "animated" id = "Ccard3">
+	<div class= "fc-card animated" id = "Ccard3">
 		...and Card 3 now
 	</div>
+
+	<button id = "fc-home">Go Home</button>
 
 	<script>
 	$(document).ready( function() {
