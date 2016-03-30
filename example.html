@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<head>
+	<script src = "jquery-2.2.2.min.js"></script>
+	<script src = "jquery-tree.js"></script>
+	<link rel="stylesheet" href="animate.css">
+	<style>
+	div {
+		border: solid 2px;
+		display: none;
+		width: 200px;
+		padding: 20px;
+		margin: auto;
+		text-align: center;
+	}
+	#Cmain{
+		display: block;
+	}
+	</style>
+</head>
+
+<body>
+	<div class= "card animated" id = "Cmain">
+		You see Card 1 now
+		<button class= "tree-btn" id="Bcard2">Show card 2</button>
+	</div>
+	<div id = "Ccard2" class= "animated">
+		...and Card 2 now
+		<button class= "tree-btn" id="Bcard3">Show card 3</button>
+	</div>
+	<div class= "animated" id = "Ccard3">
+		...and Card 3 now
+	</div>
+
+	<script>
+	$(document).ready( function() {
+		$("body").tree("bounceIn","fadeOut",1000);
+	});
+	</script>
+	
+</body>
