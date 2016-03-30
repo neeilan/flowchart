@@ -28,19 +28,21 @@
 </head>
 
 <body>
-	
 	<div class= "fc-card animated" id = "fc-main">
 		You see Card 1 now
 		<button class= "fc-btn" id="Bcard2">Show card 2</button>
 	</div>
+	
 	<div class= "fc-card animated" id = "Ccard2">
 		...and Card 2 now. Choose one of the following:<br>
 		<button class= "fc-btn" id="Bcard3">Card 3</button>
 		<button class= "fc-btn" id="Bcard4">Card 4</button>
 	</div>
+	
 	<div class= "fc-card animated" id = "Ccard3">
 		Card 3
 	</div>
+	
 	<div class= "fc-card animated" id = "Ccard4">
 		Card 4
 	</div>
@@ -49,10 +51,11 @@
 		<button id = "fc-home">Go Home</button>
 		<button id = "fc-back">Go Back</button>
 	</nav>
-
+	
 	<script>
 	$(document).ready( function() {
 		$("body").fc("bounceIn","fadeOut",1000);
 	});
 	</script>
+	
 </body>
