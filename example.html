@@ -12,14 +12,17 @@
 		margin: auto;
 		text-align: center;
 	}
-	#Cmain{
+	#fc-main{
 		display: block;
 	}
-	#fc-home{
+	#fc-home, #fc-back{
 		display: none;
 		position: fixed;
 		top: 10px;
 		left: 10px;
+	}
+	#fc-back{
+		top: 50px;
 	}
 
 	button{
@@ -31,19 +34,26 @@
 
 <body>
 	
-	<div class= "fc-card animated" id = "Cmain">
+	<div class= "fc-card animated" id = "fc-main">
 		You see Card 1 now
 		<button class= "fc-btn" id="Bcard2">Show card 2</button>
 	</div>
 	<div class= "fc-card animated" id = "Ccard2">
-		...and Card 2 now
-		<button class= "fc-btn" id="Bcard3">Show card 3</button>
+		...and Card 2 now. Choose one of the following:<br>
+		<button class= "fc-btn" id="Bcard3">Card 3</button>
+		<button class= "fc-btn" id="Bcard4">Card 4</button>
 	</div>
 	<div class= "fc-card animated" id = "Ccard3">
-		...and Card 3 now
+		Card 3
+	</div>
+	<div class= "fc-card animated" id = "Ccard4">
+		Card 4
 	</div>
 
-	<button id = "fc-home">Go Home</button>
+<nav>
+	<button id = "fc-home">Go Home</button><br>
+	<button id = "fc-back">Go Back</button>
+</nav>
 
 	<script>
 	$(document).ready( function() {
