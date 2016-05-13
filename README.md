@@ -1,6 +1,6 @@
 flowchart
 ===
-jQuery plugin for managing views in flowchart decision-tree type SPAs. Plays nice with Animate.css
+Tiny jQuery plugin for managing views in client-side flowchart / decision-tree apps. Plays nice with Animate.css
 
 Example page:
 
@@ -8,21 +8,6 @@ http://neeilan.github.io/flowchart/
 
 ##Set up in 3 steps
 
-
-
-#### Some CSS homework
-
-We want to hide all of our views or cards (which are defined by the `fc-card` class) by default, except for the initial view which has the `id` attribute of `fc-main`. We also want to hide the home (`fc-home`) and back (`fc-back`) buttons by default:
-
-    .fc-card {
-       display: none;
-    }
-    #fc-main{
-       display: block;
-    }
-    #fc-home, #fc-back {
-        display: none;
-    }
  ### 1. Define your views with the `fc-card` class and `fc-main` id
 
 Create your main HTML views -- usually by creating `<div>` elements -- for each *individual* view within your app. You don't need to create more than one version of a single view if several paths through the decision tree lead to it. (see __Common endpoints__ below). 
@@ -46,6 +31,22 @@ Unless specified, the element and it's children will not be affected. Here is an
         <button class = "fc-btn" id="BYN">No</button>
         <button class = "fc-btn" id="BYM">Maybe</button>
     </div>
+
+
+#### Some CSS homework
+
+We want to hide all of our views or cards (which are defined by the `fc-card` class) by default, except for the initial view which has the `id` attribute of `fc-main`. We also want to hide the home (`fc-home`) and back (`fc-back`) buttons by default:
+
+    .fc-card {
+       display: none;
+    }
+    #fc-main{
+       display: block;
+    }
+    #fc-home, #fc-back {
+        display: none;
+    }
+
 
 ### 2. Map buttons to views with `fc-btn` class and ids
 Like `fc-card`. `fc-home` and  `fc-back`, any clickable HTML element, such as an image or even font icons via an `<i>` tag, will work as a "button" within the page.
