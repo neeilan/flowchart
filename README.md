@@ -8,7 +8,7 @@ http://neeilan.github.io/flowchart/
 
 ##Set up in 3 steps
 
- ### 1. Define your views with the `fc-card` class and `fc-main` id
+###1. Define your views with `.fc-card` class and `#fc-main`
 
 Create your main HTML views -- usually by creating `<div>` elements -- for each *individual* view within your app. You don't need to create more than one version of a single view if several paths through the decision tree lead to it. (see __Common endpoints__ below). 
 
