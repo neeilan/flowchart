@@ -53,8 +53,8 @@ Other than the `#fc-main` view which is mandatory, all mapping within your flow 
 
     ___B or C___  +  (response to first card) + (response to second card) + ... + (response to Nth card)
 
-For example, if a user has to click the second `fc-btn` on `#fc-main`, the third `fc-btn` on the resulting view, and the first `fc-btn` on the subsequent view in order to arrive at a certain card, it would be logical to name it `#C231'.
-Similarly, the `.fc-btn' that had to be clicked in order to arrive at this view would logically be named `#B231'.
+For example, if a user has to click the second `fc-btn` on `#fc-main`, the third `fc-btn` on the resulting view, and the first `fc-btn` on the subsequent view in order to arrive at a certain card, it would be logical to name it `#C231`.
+Similarly, the `.fc-btn` that had to be clicked in order to arrive at this view would logically be named `#B231`.
 
 ### Common endpoints in a flowchart
 Sometimes, several pathways through a flowchart may lead to a commonly used resource. In this case, rather than creating multiple views holding the same content, we can give it a descriptive name such as `#COurProductPage` and have any `.fc-btn` mapping to it have an `id` attribute of `#BOurProductPage`.  
