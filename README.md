@@ -66,7 +66,7 @@ That is, multiple `.fc-btn`s can map to a single `.fc-card` by specifying the sa
 ### Assigning `id` attributes effectively
 Other than the `#fc-main` view which is mandatory, all mapping within your flow chart is done by assigning `id` attributes as you wish. You have almost complete freedom when it comes to naming them to best suit your needs, but in larger trees, it can be easy to reuse or lose track of identifiers. A general format for naming buttons and cards (views) is:
 
-    __B or C__  +  (response to first card) + (response to second card) + ... + (response to Nth card)
+    B or C  +  (response to first card) + (response to second card) + ... + (response to Nth card)
 
 For example, if a user has to click the second `fc-btn` on `#fc-main`, the third `fc-btn` on the resulting view, and the first `fc-btn` on the subsequent view in order to arrive at a certain card, it would be logical to name it `#C231`.
 Similarly, the `.fc-btn` that had to be clicked in order to arrive at this view would logically be named `#B231`.
