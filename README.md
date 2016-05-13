@@ -53,20 +53,20 @@ We want to hide all of our views/"cards" (which are defined by the `fc-card` cla
 Like `fc-card`. `fc-home` and  `fc-back`, any clickable HTML element, such as an image or even font icons via an `<i>` tag, will work as a "button" within the page.
 Mapping a button to a `fc-card` consists of two steps:
 
-1. Set the `id` attribute of the button as __B<*id of choice*>__
-2. Set the `id` attribute of the target card __C<*id of choice*>__
+1. Set the `id` attribute of the button as  __B<*id of choice*>__
+2. Set the `id` attribute of the corresponding view/card as   __C<*id of choice*>__
 
-__This is an important step__ as, for example, a `fc-btn` with an `id` of __BOption3__ will map to the `fc-card` specified with the __COption3__ id. 
+__This is an important step__ as, for example, a `.fc-btn` with an `id` of __BOption3__ will map to the `.fc-card` specified with the __COption3__ id. 
 
-Note that while the *B* preceding the `fc-btn` id is simply present as a safety measure (the first character is simply removed when the click is handled), the *C*  prefix on `fc-card` ids are crucial for mapping.
+Note that while the *B* preceding the `.fc-btn`'s id is simply present as a safety measure (the first character is simply removed when the click is handled), the *C*  prefix on `fc-card` ids are crucial for mapping.
 
-That is, multiple `fc-btns` can map to a single `fc-card` by specifying the same `id` attribute, but each card should have a unique identifier.  
+That is, multiple `.fc-btn`s can map to a single `.fc-card` by specifying the same `id` attribute, but each card should have a unique identifier.  
 
 
 ### Assigning `id` attributes effectively
 Other than the `#fc-main` view which is mandatory, all mapping within your flow chart is done by assigning `id` attributes as you wish. You have almost complete freedom when it comes to naming them to best suit your needs, but in larger trees, it can be easy to reuse or lose track of identifiers. A general format for naming buttons and cards (views) is:
 
-    ___B or C___  +  (response to first card) + (response to second card) + ... + (response to Nth card)
+    __B or C__  +  (response to first card) + (response to second card) + ... + (response to Nth card)
 
 For example, if a user has to click the second `fc-btn` on `#fc-main`, the third `fc-btn` on the resulting view, and the first `fc-btn` on the subsequent view in order to arrive at a certain card, it would be logical to name it `#C231`.
 Similarly, the `.fc-btn` that had to be clicked in order to arrive at this view would logically be named `#B231`.
