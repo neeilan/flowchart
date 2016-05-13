@@ -17,9 +17,9 @@ We want to hide all of our views or cards (which are defined by the `fc-card` cl
     .fc-card {
        display: none;
    }
-	#fc-main{
-	    display: block;
-	}
+   #fc-main{
+       display: block;
+    }
     #fc-home, #fc-back {
         display: none;
     }
