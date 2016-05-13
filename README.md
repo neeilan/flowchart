@@ -34,9 +34,9 @@ Here is another example of a view:
     </div>
 
 
-#### Some CSS homework
+#### Some CSS homework (I'll build this into the script soon!)
 
-We want to hide all of our views/"cards" (which are defined by the `fc-card` class) by default, except for the initial view which has the `id` attribute of `fc-main`. We also want to hide the home (`#fc-home`) and back (`#fc-back`) buttons by default:
+By default, We want to hide all of our views/"cards" (which are defined by the `fc-card` class), except for the initial view which has the `id` attribute of `fc-main`. We also want to hide the home (`#fc-home`) and back (`#fc-back`) buttons by default:
 
     .fc-card {
        display: none;
