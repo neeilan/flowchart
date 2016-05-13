@@ -14,7 +14,7 @@ Create your main HTML views -- usually by creating `<div>` elements -- for each 
 
 Any element with a `class` attribute of `fc-card` is treated as one of the views within your flowchart or decision tree. 
 
-We can specify our main (initial) view by assigning it an `id` of __`fc-main`__. This is the first page in your flowchart-y application that the user will see. Based on what they select from inside this div, the next appropriate view will be rendered.
+We can specify our main (initial) view by assigning it an `id` of __`fc-main`__. This is the first page in your flowchart-y application that the user will see. Based on what they select from inside this `<div>`, the next appropriate view will be rendered.
 
 
     <div class = "fc-card" id="fc-main">
