@@ -72,7 +72,7 @@ For example, if a user has to click the second `fc-btn` on `#fc-main`, the third
 Similarly, the `.fc-btn` that had to be clicked in order to arrive at this view would logically be named `#B231`.
 
 ### 3. Define Home and Back buttons
-Functionality for `onclick` events on two special elements to work as the __Home__ and __Back__ buttons comes built in. These are usually `<a>` or `<button>` elements, but any clickable HTML element will work.
+Functionality for `onclick` events on two special elements that function as the __Home__ and __Back__ buttons comes built in. These are usually `<a>` or `<button>` elements, but again, any clickable HTML element will work.
    
 1. Home button is defined by setting the `id` attribute on the element to `fc-home`
 2. To define the back button, set the `id` attribute to `fc-back`
