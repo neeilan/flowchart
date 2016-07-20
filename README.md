@@ -10,9 +10,9 @@ http://neeilan.github.io/flowchart/
 
 ###1. Define your views with `.fc-card` class and `#fc-main`
 
-Create your main HTML views -- usually by creating `<div>` elements -- for each *individual* view within your app. You don't need to create more than one version of a single view if several paths through the decision tree lead to it. (see __Common endpoints__ below). 
+Create your main HTML views -- usually by creating `<div>` elements -- for each *individual* view within your app. You don't need to create more than one version of a single view if several paths through the decision tree lead to it. (see __Common endpoints__ below).
 
-Any element with a `class` attribute of `fc-card` is treated as one of the views within your flowchart or decision tree. 
+Any element with a `class` attribute of `fc-card` is treated as one of the views within your flowchart or decision tree.
 
 We can specify our main (initial) view by assigning it an `id` of __`fc-main`__. This is the first page in your flowchart-y application that the user will see. Based on what they select from inside this `<div>`, the next appropriate view will be rendered.
 
@@ -20,10 +20,10 @@ We can specify our main (initial) view by assigning it an `id` of __`fc-main`__.
     <div class = "fc-card" id="fc-main">
         Welcome to flowchart, pick an option:
         ...
-    </div> 
+    </div>
 
 
-Unless an element or a parent element is specified as `.fc-card`, neither that element nor it's children will not be affected. 
+Unless an element or a parent element is specified as `.fc-card`, neither that element nor it's children will not be affected.
 Here is another example of a view:
 
     <div class= "fc-card" id="CY">
@@ -34,21 +34,6 @@ Here is another example of a view:
     </div>
 
 
-#### Some CSS homework (I'll build this into the script soon!)
-
-By default, We want to hide all of our views/"cards" (which are defined by the `fc-card` class), except for the initial view which has the `id` attribute of `fc-main`. We also want to hide the home (`#fc-home`) and back (`#fc-back`) buttons by default:
-
-    .fc-card {
-       display: none;
-    }
-    #fc-main{
-       display: block;
-    }
-    #fc-home, #fc-back {
-        display: none;
-    }
-
-
 ### 2. Map buttons to views with `fc-btn` class and ids
 Like `fc-card`. `fc-home` and  `fc-back`, any clickable HTML element, such as an image or even font icons via an `<i>` tag, will work as a "button" within the page.
 Mapping a button to a `fc-card` consists of two steps:
@@ -56,7 +41,7 @@ Mapping a button to a `fc-card` consists of two steps:
 1. Set the `id` attribute of the button as  __B<*id of choice*>__
 2. Set the `id` attribute of the corresponding view/card as   __C<*id of choice*>__
 
-__This is an important step__ as, for example, a `.fc-btn` with an `id` of __BOption3__ will map to the `.fc-card` specified with the __COption3__ id. 
+__This is an important step__ as, for example, a `.fc-btn` with an `id` of __BOption3__ will map to the `.fc-card` specified with the __COption3__ id.
 
 Note that while the *B* preceding the `.fc-btn`'s id is simply present as a safety measure (the first character is simply removed when the click is handled), the *C*  prefix on `fc-card` ids are crucial for mapping.
 
@@ -73,7 +58,7 @@ Similarly, the `.fc-btn` that had to be clicked in order to arrive at this view 
 
 ### 3. Define Home and Back buttons
 Functionality for `onclick` events on two special elements that function as the __Home__ and __Back__ buttons comes built in. These are usually `<a>` or `<button>` elements, but again, any clickable HTML element will work.
-   
+
 1. Home button is defined by setting the `id` attribute on the element to `fc-home`
 2. To define the back button, set the `id` attribute to `fc-back`
 
@@ -95,6 +80,5 @@ You can then supply any [Animate.css effects]('https://github.com/daneden/animat
     $(document).ready(function(){
         $("body").fc("fadeIn","fadeOut",600);
     });
-    
-Note that `Delay` refers to the delay between a click and the specified card appearing, not the animation duration, which is instead set through your CSS stylesheet.
 
+Note that `Delay` refers to the delay between a click and the specified card appearing, not the animation duration, which is instead set through your CSS stylesheet.
