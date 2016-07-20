@@ -1,8 +1,14 @@
 (function($){
 	$.fn.fc = function (animateIn,animateOut, delay){
-     
+
+		// Reset state at start
+		$(".fc-card").hide();
+		$("#fc-home").hide();
+		$("#fc-back").hide();
+		$("#fc-main").show();
+
         var history = ["#fc-main"];
-        
+
         if(!delay || delay<0){
          delay=500;
      }
@@ -13,7 +19,7 @@
         parent.removeClass(animateIn).addClass(animateOut);
         var nextId = "#C" + $(this).attr("id").substring(1);
         history.push(nextId);
-        
+
         setTimeout(function() {
         	parent.hide();
         	$(nextId).addClass(animateIn).show();
@@ -53,4 +59,4 @@
         }, delay);
     })
  }
-}(jQuery));		
+}(jQuery));
