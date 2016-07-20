@@ -87,6 +87,5 @@
 				}
 				delete children[id];
 			}
-
 	}
 }(jQuery));
