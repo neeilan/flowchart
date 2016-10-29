@@ -23,7 +23,7 @@ We can specify our main (initial) view by assigning it an `id` of __`fc-main`__.
     </div>
 
 
-Unless an element or a parent element is specified as `.fc-card`, neither that element nor it's children will not be affected.
+Unless an element or a parent element is specified as `.fc-card`, neither that element nor it's children will be affected.
 Here is another example of a view:
 
     <div class= "fc-card" id="CY">
