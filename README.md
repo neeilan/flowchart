@@ -2,9 +2,12 @@ flowchart
 ===
 Tiny jQuery plugin for managing views in client-side flowchart / decision-tree apps. Plays nice with Animate.css
 
-Example page:
+Example pages:
 
 http://neeilan.github.io/flowchart/
+
+http://mindsmattermagazine.com/utscnavigator/
+
 
 ## Set up in 3 steps
 
